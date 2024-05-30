@@ -5,10 +5,6 @@
 No longer need for laggy and bulky redstone contraptions.
 The Items Filter provides a better alternative to automatically sort your storage room!
 
-# ⚠️ Important - If you were using V.2
-
-If you were using Hopper Sorters (V.2) and want to convert them to Items Filters (V.3), follow the steps of the "🔧 Update from V.2" section further.
-
 # 🪄Introduction
 ## What is Items Filter?
 
