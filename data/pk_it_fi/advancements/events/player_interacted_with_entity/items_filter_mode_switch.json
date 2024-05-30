@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:interaction",
+                            "nbt": "{Tags:[\"pk.it_fi.items_filter.mode_switch\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_it_fi:events/player/interacted_with_entity/items_filter_mode_switch"
+    }
+}
