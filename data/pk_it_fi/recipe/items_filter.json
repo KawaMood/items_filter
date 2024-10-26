@@ -2,26 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": ["CHC", "COC", "CDC"],
     "key": {
-        "D": {
-            "item": "minecraft:dropper"
-        },
-        "H": {
-            "item": "minecraft:hopper"
-        },
-        "O": {
-            "item": "minecraft:observer"
-        },
-        "C": {
-            "item": "minecraft:cobbled_deepslate"
-        }
+        "D": "minecraft:dropper",
+        "H": "minecraft:hopper",
+        "O": "minecraft:observer",
+        "C": "minecraft:cobbled_deepslate"
     },
     "result": {
         "id": "minecraft:player_head",
         "components": {
             "minecraft:custom_model_data": 11130050,
-            "minecraft:lore": [
-                "{\"color\":\"dark_gray\",\"italic\":false,\"text\":\"Items Filter\"}"
-            ],
+            "minecraft:lore": ["{\"color\":\"dark_gray\",\"italic\":false,\"text\":\"Items Filter\"}"],
             "minecraft:item_name": "{\"color\":\"white\",\"text\":\"Items Filter\"}",
             "minecraft:custom_data": {
                 "pk_data": {
