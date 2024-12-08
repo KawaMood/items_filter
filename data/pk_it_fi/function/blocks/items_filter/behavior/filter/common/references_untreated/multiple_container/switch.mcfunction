@@ -1,0 +1,4 @@
+execute if score $temp pk.custom_block.facing matches 1 run return run function pk_it_fi:blocks/items_filter/behavior/filter/common/references_untreated/multiple_container/east
+execute if score $temp pk.custom_block.facing matches 2 run return run function pk_it_fi:blocks/items_filter/behavior/filter/common/references_untreated/multiple_container/south
+execute if score $temp pk.custom_block.facing matches 3 run return run function pk_it_fi:blocks/items_filter/behavior/filter/common/references_untreated/multiple_container/west
+function pk_it_fi:blocks/items_filter/behavior/filter/common/references_untreated/multiple_container/north
