@@ -6,7 +6,7 @@ advancement revoke @s only pk_it_fi:events/placed_block/items_filter
 # Mark the current player
 tag @s add pk.current.player
 
-# Store item data the player used to place the Waystone and tell the process it has been placed by a player
+# Store item data the player used to place the Items Filter and tell the process it has been placed by a player
 data modify storage pk:common temp.item set from entity @s SelectedItem
 scoreboard players set $pk.custom_block.placed_by_player pk.temp 1
 

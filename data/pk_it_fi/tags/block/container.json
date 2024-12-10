@@ -1,12 +1,12 @@
 {
-    "replace": false,
-    "values": [
-        "minecraft:barrel",
-        "minecraft:chest",
-        "minecraft:dispenser",
-        "minecraft:dropper",
-        "minecraft:hopper",
-        "minecraft:trapped_chest",
-        "#minecraft:shulker_boxes"
-    ]
+  "replace": false,
+  "values": [
+    "minecraft:barrel",
+    "minecraft:chest",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:hopper",
+    "minecraft:trapped_chest",
+    "#minecraft:shulker_boxes"
+  ]
 }

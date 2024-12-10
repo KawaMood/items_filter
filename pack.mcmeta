@@ -1,11 +1,11 @@
 {
-    "id": "pk.items_filter",
-    "pack": {
-        "pack_format": 57,
-        "supported_formats": {
-            "min_inclusive": 57,
-            "max_inclusive": 57
-        },
-        "description": "KawaMood's Items Filter V.3.2.0 for Minecraft 1.21.3"
-    }
+  "id": "pk.items_filter",
+  "pack": {
+    "pack_format": 61,
+    "supported_formats": {
+      "min_inclusive": 61,
+      "max_inclusive": 61
+    },
+    "description": "KawaMood's Items Filter V.3.2.1 for Minecraft 1.21.4"
+  }
 }

@@ -1,20 +1,20 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": "minecraft:player_head",
-                        "predicates": {
-                            "minecraft:custom_data": "{pk_data:{custom_block:1b,id:\"items_filter\",from:\"items_filter\"}}"
-                        }
-                    }
-                ]
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "predicates": {
+              "minecraft:custom_data": "{pk_data:{custom_block:1b,id:\"items_filter\",from:\"items_filter\"}}"
             }
-        }
-    },
-    "rewards": {
-        "function": "pk_it_fi:events/player/inventory_changed/has_items_filter"
+          }
+        ]
+      }
     }
+  },
+  "rewards": {
+    "function": "pk_it_fi:events/player/inventory_changed/has_items_filter"
+  }
 }

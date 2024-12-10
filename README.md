@@ -6,6 +6,7 @@ No longer need for laggy and bulky redstone contraptions.
 The Items Filter provides a better alternative to automatically sort your storage room!
 
 # 🪄Introduction
+
 ## What is Items Filter?
 
 Items Filters allow you to you to filter several types of items from a container placed **above** it to another container placed **below** it. You can choose what items the filter let pass by presetting them in an adjacent **reference** container.
@@ -16,11 +17,12 @@ If you used to use V.2, you may have noticed that the data pack changed its name
 ## How to craft and use an Item Filter?
 
 Items Filters can be crafted using:
+
 - 6x **Cobbled Deeplsate**
 - 1x **Hopper**
 - 1x **Observer**
 - 1x **Dropper**
-The recipe is the following:
+  The recipe is the following:
 
 ![recipe](https://cdn.modrinth.com/data/cached_images/5d5585b60858ff43245b5dce1241686ee3e3f379.png)
 
@@ -29,6 +31,7 @@ When you place an Items Filter, the side facing your player will show a **tiny g
 The opposite face shows a **tiny observer icon**. This is where you need to place a **compatible containers** (_all containers having a direct_ `Items` _entry like chests, hoppers, barrels, shulker boxes, dropper, dispenser, etc._). This one need to contain all **reference items**, meaning the one you want to let pass through the relative filter. Other items that don't match those ones will remain in the container above, or continue their path to your system if it is an hopper connected to another.
 
 In order to make it work, Items Filters then needs to have :
+
 - A compatible container placed above them.
 - A compatible container placed on their tiny observer icon, and containing items to filter.
 - A compatible container placed below them to receive the filtered items, or a fluid block (air/lava/water) to directly drop them.
@@ -61,20 +64,25 @@ The Strict mode also has the ability of ignoring some tags or components if need
 The Strict mode has the ability of ignoring some components during the filter's checks.
 By default, no ignored components are set.
 You can **add**, **remove** or get the **list** of currently ignored components using the following commands respectively:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_components/add {id:"<id>"}
 /function pk_it_fi:settings/mode/strict/ignored_components/remove {id:""<id>"}
 /function pk_it_fi:settings/mode/strict/ignored_components/list
 ```
+
 Example - Ignoring the `"minecraft:repair_cost"` component:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_components/add {id:"minecraft:repair_cost"}
 ```
 
 There is also a premade sample containing most common components we usually want to ignore: `"minecraft:custom_name"`, `"minecraft:lore"`, `"minecraft:enchantments"`, `"minecraft:damage"` and `"minecraft:repair_cost"`. You can activate it using the following command:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_components/add_default_sample
 ```
+
 </details>
 <details>
 <summary>Ignored tags for Strict Mode (for V.3.0.1 or less)</summary>
@@ -82,20 +90,25 @@ There is also a premade sample containing most common components we usually want
 The Strict mode has the ability of ignoring some tags during the filter's checks.
 By default, no ignored tags are set.
 You can **add**, **remove** or get the **list** of currently ignored tags using the following commands respectively:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_tags/add {property:"<property>"}
 /function pk_it_fi:settings/mode/strict/ignored_tags/remove {property:""<property>"}
 /function pk_it_fi:settings/mode/strict/ignored_tags/list
 ```
+
 Example - Ignoring the `repairCost` tag:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_tags/add {property:"repairCost"}
 ```
 
 There is also a premade sample containing most common tags we usually want to ignore: `display`, `Enchantments`, `Damage` and `repairCost`. You can activate it using the following command:
+
 ```
 /function pk_it_fi:settings/mode/strict/ignored_tags/add_default_sample
 ```
+
 </details>
 <details>
 <summary>Change the transfer cooldown of items filters</summary>
@@ -119,10 +132,13 @@ Note that the transfer cooldown can't be set lower than 1 tick.
 If you are an operator of your server or if cheats are enabled in your single-player world, you can give yourself an items filter using these following command:
 
 (after V.3.1.0):
+
 ```
 /function pk_it_fi:cmd/give/items_filter
 ```
+
 (before V.3.1.0):
+
 ```
 /function pk_it_fi:items/items_filter/give
 ```
@@ -132,9 +148,11 @@ If you are an operator of your server or if cheats are enabled in your single-pl
 ### Recreate all items filters from the database
 
 If ever items filters have been broken accidentally (using a `kill @e` command for example) you can run the following command to recreate all items filters from the database
+
 ```
 /function pk_it_fi:base/debug/recreate_all_items_filters/start
 ```
+
 The process will automatically remove all remaining entities and blocks of broken items filters before placing fresh ones. All data (id, owner, filterring mode...) will be preserved.
 It may take some time for it to complete, so be sure to get the message telling the process ended successfully before interacting with or placing an items filter.
 
@@ -144,10 +162,13 @@ You can transform all existring Hopper Sorters (from V.2) to Items Filters. In o
 Just remove the V.2 data pack from the datapacks folder of your world, update your world to the newer version of Minecraft if desired and install Items Filters V.3 at the same time. Then use the following command to start the automatic updating process:
 
 (after V.3.1.1):
+
 ```
 /function pk_it_fi:cmd/database/update_from_v2
 ```
+
 (before V.3.1.1):
+
 ```
 /function pk_it_fi:base/update/from_v2/start
 ```
@@ -160,13 +181,14 @@ Note that this process won't unfortunately keep the **filterring mode** (**lax**
 
 Items filters comes with an automatic uninstallation process. Running it will:
 
-- Remove all waystones that have been placed in your world, in every dimensions
+- Remove all items filters that have been placed in your world, in every dimensions
 - Remove all scores and storage specific to the Items Filter data pack
 - If there is no more KawaMood data packs installed, also remove all common scores and storages
 
 The uninstalling process may take some seconds to complete. Be sure to wait for the message telling you that you can safely remove the data pack from your world's folder before doing it.
 
 The command to start the uninstalling process is the following one:
+
 ```
 /function pk_it_fi:base/uninstall/start
 ```
@@ -177,21 +199,24 @@ The command to start the uninstalling process is the following one:
 <summary>Do I need to install a resources pack?</summary>
 
 No, this data pack doesn't require a resources pack. It uses display entities to render custom textures.
+
 </details>
 
 <details>
 <summary>The texture of the block shows regular player heads, how can I fix that?</summary>
 
-You need to be connected to the internet the first time you use a new type of waystone. The textures of the player heads that are used to create their looks are indeed loaded and cached on the client-side, from (old or current) players skins that are stored on a Mojang server.
+You need to be connected to the internet the first time you use an items filter. The textures of the player heads that are used to create their looks are indeed loaded and cached on the client-side, from (old or current) players skins that are stored on a Mojang server.
 
 If you accidentally used a content that required to be online the first time you use it, and now see regular players heads instead of the expected texture, you can still go in the ".minecraft/assets/skins/" folder, then sort the sub-folders by date, and delete some recent folders. Once that is done, if your game was already started, you will need to restart it to update the cached content.
 
 ⚠️ **Exceptional issue on 1.20.2**: Players heads can sometimes show default player skins (Steve & co.) rather than its actual texture although the whole cache folder are cleared. This is actually an [known issue](https://bugs.mojang.com/browse/MC-264966) from the game itself that struggle to load a texture depending on the signature's value. This issue has been fixed on 1.20.3.
+
 </details>
 
 # 🪠 Report an issue
 
 If you encountered an issue with this data pack, preferably join the [Discord server](https://discord.com/invite/w8s9XWgN6v), and open a post in the dedicated **#data-pack-issues** channel to describe your problem. Please, don't forget to provide all necessary informations including:
+
 - The Minecraft version you're using.
 - The version of the concerned data pack you're using.
 - If you're using any modified version like Forge, Paper or Spigot.
@@ -205,7 +230,7 @@ Before doing that, please read the F.A.Q. section just above. The issue you're f
 # 📌 Other links
 
 Thank you for using Items Filter! It makes me happy to know people are enjoying it.
-If you want to support its development and the development of other data packs, you can support me on my other social networks: 
+If you want to support its development and the development of other data packs, you can support me on my other social networks:
 
 - [Youtube](https://www.youtube.com/@KawaMood/)
 - [Modrinth](https://modrinth.com/user/KawaMood)

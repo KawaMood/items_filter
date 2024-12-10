@@ -1,6 +1,6 @@
 #> pk_it_fi:blocks/items_filter/place/run
 # Place an Items Filter and store its relative information in the database
-# @context the player who placed the waystone head, at the block location
+# @context the player who placed the items filter head, at the block location
 
 # Scores
 #   Define the component id
@@ -28,4 +28,4 @@ execute positioned ~.5 ~.375 ~.5 summon interaction run function pk_it_fi:blocks
 setblock ~ ~ ~ chiseled_deepslate
 
 # Debug logs
-execute if score $logs.datapack.item_filters pk.value matches 1 run tellraw @a[tag=pk.dev] [{"selector":"@a[tag=pk.current.player,limit=1]","color": "gray"},{"text": " placed Items Filter at ["},{"nbt":"temp.items_filter.location.x","storage":"pk:common"},{"text": ","},{"nbt":"temp.waystone.location.y","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.z","storage":"pk:common"},{"text": "] in "},{"nbt":"temp.items_filter.location.dimension","storage":"pk:common"}]
+execute if score $logs.datapack.item_filters pk.value matches 1 run tellraw @a[tag=pk.dev] [{"selector":"@a[tag=pk.current.player,limit=1]","color": "gray"},{"text": " placed Items Filter at ["},{"nbt":"temp.items_filter.location.x","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.y","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.z","storage":"pk:common"},{"text": "] in "},{"nbt":"temp.items_filter.location.dimension","storage":"pk:common"}]
