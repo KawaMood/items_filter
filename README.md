@@ -26,7 +26,7 @@ Items Filters can be crafted using:
 
 ![recipe](https://cdn.modrinth.com/data/cached_images/5d5585b60858ff43245b5dce1241686ee3e3f379.png)
 
-When you place an Items Filter, the side facing your player will show a **tiny grey button**. This is the one you can right-click to toggle mode, that we will explain later.
+When you place an items filter, the side facing your player will show a **tiny grey button**. This is the one you can right-click to toggle mode, that we will explain later.
 
 The opposite face shows a **tiny observer icon**. This is where you need to place a **compatible containers** (_all containers having a direct_ `Items` _entry like chests, hoppers, barrels, shulker boxes, dropper, dispenser, etc._). This one need to contain all **reference items**, meaning the one you want to let pass through the relative filter. Other items that don't match those ones will remain in the container above, or continue their path to your system if it is an hopper connected to another.
 
@@ -36,7 +36,7 @@ In order to make it work, Items Filters then needs to have :
 - A compatible container placed on their tiny observer icon, and containing items to filter.
 - A compatible container placed below them to receive the filtered items, or a fluid block (air/lava/water) to directly drop them.
 
-![scheme](https://cdn.modrinth.com/data/cached_images/3efcfefaf1bb246ecd2131d61b84d7a068d13a76.png)
+![scheme](https://cdn.modrinth.com/data/cached_images/17feaafb4a39efaceb195e168a57a944438eda13.png)
 
 I recommend you to see the tutorial video for better explanations and examples.
 
@@ -124,6 +124,20 @@ Example - Setting the transfer cooldown of items filters to 1 tick:
 ```
 Note that the transfer cooldown can't be set lower than 1 tick.
 </details>
+<details>
+<summary>Allow double chests use as reference</summary>
+
+You can make item filters search reference items from a double-chests.
+By default, this feature is disabled, as it is not necessary needed and consume almost twice more performances per check.
+You can **enable**, **disable** or \*_get_ the current state of this setting using the following commands respectively:
+
+```
+/function pk_it_fi:settings/reference/allow_double_chest/true
+/function pk_it_fi:settings/reference/allow_double_chest/false
+/function pk_it_fi:settings/reference/allow_double_chest/get
+```
+
+</details>
 
 # 🧰 Other Commands
 
@@ -150,7 +164,7 @@ If you are an operator of your server or if cheats are enabled in your single-pl
 If ever items filters have been broken accidentally (using a `kill @e` command for example) you can run the following command to recreate all items filters from the database
 
 ```
-/function pk_it_fi:base/debug/recreate_all_items_filters/start
+/function pk_it_fi:cmd/debug/recreate_all_items_filters
 ```
 
 The process will automatically remove all remaining entities and blocks of broken items filters before placing fresh ones. All data (id, owner, filterring mode...) will be preserved.
@@ -205,7 +219,7 @@ No, this data pack doesn't require a resources pack. It uses display entities to
 <details>
 <summary>The texture of the block shows regular player heads, how can I fix that?</summary>
 
-You need to be connected to the internet the first time you use an items filter. The textures of the player heads that are used to create their looks are indeed loaded and cached on the client-side, from (old or current) players skins that are stored on a Mojang server.
+You need to be connected to the internet the first time you use a new type of waystone. The textures of the player heads that are used to create their looks are indeed loaded and cached on the client-side, from (old or current) players skins that are stored on a Mojang server.
 
 If you accidentally used a content that required to be online the first time you use it, and now see regular players heads instead of the expected texture, you can still go in the ".minecraft/assets/skins/" folder, then sort the sub-folders by date, and delete some recent folders. Once that is done, if your game was already started, you will need to restart it to update the cached content.
 
@@ -233,6 +247,5 @@ Thank you for using Items Filter! It makes me happy to know people are enjoying 
 If you want to support its development and the development of other data packs, you can support me on my other social networks:
 
 - [Youtube](https://www.youtube.com/@KawaMood/)
-- [Modrinth](https://modrinth.com/user/KawaMood)
 - [Planet Minecraft](https://www.planetminecraft.com/member/kawamood/)
 - Or if you're in a generous mood, I accept donation on [paypal](https://paypal.me/KawaMood) or [buy me a kawa](https://www.buymeacoffee.com/kawamood) (slang term for "coffee")!
