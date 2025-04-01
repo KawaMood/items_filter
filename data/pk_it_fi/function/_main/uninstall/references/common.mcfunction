@@ -1,4 +1,4 @@
-#> pk_it_fi:base/uninstall/remove_all_features
+#> pk_it_fi:_main/uninstall/references/common
 
 # Clear scores
 scoreboard objectives remove pk.value
@@ -13,7 +13,6 @@ scoreboard objectives remove pk.crafted.knowledge_book
 
 # Clear storage
 data remove storage pk:common package
-data remove storage pk:common debug
 data remove storage pk:common update
 data remove storage pk:common debug
 data remove storage pk:common temp

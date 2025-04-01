@@ -9,4 +9,4 @@ execute if score $sanitize_value pk.temp matches ..-1 run scoreboard players set
 scoreboard players operation $pk.it_fi.settings.transfer_cooldown pk.value = $sanitize_value pk.temp
 
 # Logs
-tellraw @s [{"text":"Items Filters Transfer Cooldown is now set to ","color":"gray"},{"score":{"name":"$pk.it_fi.settings.transfer_cooldown","objective":"pk.value"},"color":"yellow"},{"text":" ticks","color":"gray"}]
+tellraw @s [{text:"Items Filters Transfer Cooldown is now set to ",color:"gray"},{score:{name:"$pk.it_fi.settings.transfer_cooldown",objective:"pk.value"},color:"yellow"},{text:" ticks",color:"gray"}]

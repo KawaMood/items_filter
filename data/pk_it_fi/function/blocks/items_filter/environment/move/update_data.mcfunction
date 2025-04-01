@@ -12,4 +12,4 @@ data modify storage pk:common params.v1 set from entity @s data.items_filter.id
 function pk_it_fi:packages/dynamic_command/1_var with storage pk:common params
 
 # Debug logs
-execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{"text": "Items Filter has been moved to [","color": "gray"},{"nbt":"temp.location.x","storage":"pk:common"},{"text": ","},{"nbt":"temp.location.y","storage":"pk:common"},{"text": ","},{"nbt":"temp.location.z","storage":"pk:common"},{"text": "]"}]
+execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{text: "Items Filter has been moved to [",color: "gray"},{nbt:"temp.location.x",storage:"pk:common"},{text: ","},{nbt:"temp.location.y",storage:"pk:common"},{text: ","},{nbt:"temp.location.z",storage:"pk:common"},{text: "]"}]

@@ -1,4 +1,4 @@
-#> pk_it_fi:base/update/from_v2/blocks/id/items_filter
+#> pk_it_fi:_main/update/from_v2/blocks/id/items_filter
 # @input
 #   storage pk:common update.old_entry: The current entry from the blocks list to update
 

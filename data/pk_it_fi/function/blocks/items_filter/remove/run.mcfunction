@@ -28,4 +28,4 @@ setblock ~ ~ ~ air
 kill @e[type=#pk_it_fi:custom_block/components,tag=pk.it_fi.items_filter.component,predicate=pk_it_fi:scores/custom_block/component_id/match_temp,distance=..10]
 
 # Debug logs
-execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{"text": "Items Filter at [", "color": "gray"},{"nbt":"temp.items_filter.location.x","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.y","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.z","storage":"pk:common"},{"text": "] in "},{"nbt":"temp.items_filter.location.dimension","storage":"pk:common"},{"text": " has been removed"}]
+execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{text: "Items Filter at [", color: "gray"},{nbt:"temp.items_filter.location.x",storage:"pk:common"},{text: ","},{nbt:"temp.items_filter.location.y",storage:"pk:common"},{text: ","},{nbt:"temp.items_filter.location.z",storage:"pk:common"},{text: "] in "},{nbt:"temp.items_filter.location.dimension",storage:"pk:common"},{text: " has been removed"}]

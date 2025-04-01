@@ -14,9 +14,9 @@
         "strings": ["pk_it_fi:item_filter"]
       },
       "minecraft:lore": [
-        "{\"color\":\"dark_gray\",\"italic\":false,\"text\":\"Items Filter\"}"
+        { "color": "dark_gray", "italic": false, "text": "Items Filter" }
       ],
-      "minecraft:item_name": "{\"color\":\"white\",\"text\":\"Items Filter\"}",
+      "minecraft:item_name": { "color": "white", "text": "Items Filter" },
       "minecraft:custom_data": {
         "pk_data": {
           "custom_block": 1,

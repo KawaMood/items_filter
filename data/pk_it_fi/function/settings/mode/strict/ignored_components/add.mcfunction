@@ -11,7 +11,7 @@ $execute store result score $already_contains pk.temp if data storage pk:it_fi d
 
 # If found
 execute unless score $already_contains pk.temp matches 1.. run data modify storage pk:it_fi database.mode.strict.ignored_components append from storage pk:common temp.input
-execute unless score $already_contains pk.temp matches 1.. run tellraw @s [{"text":"Added \"","color":"gray"},{"nbt":"temp.input.id","storage":"pk:common","color":"yellow"},{"text":"\" to components ignored by the strict mode","color":"gray"}]
+execute unless score $already_contains pk.temp matches 1.. run tellraw @s [{text:"Added \"",color:"gray"},{nbt:"temp.input.id",storage:"pk:common",color:"yellow"},{text:"\" to components ignored by the strict mode",color:"gray"}]
 
 # If not found
-execute if score $already_contains pk.temp matches 1.. run tellraw @s {"text":"This component is already ignored","color":"red"}
+execute if score $already_contains pk.temp matches 1.. run tellraw @s {text:"This component is already ignored",color:"red"}

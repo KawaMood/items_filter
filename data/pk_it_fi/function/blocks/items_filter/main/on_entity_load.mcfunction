@@ -18,4 +18,4 @@ execute store result score $controller.version pk.temp run data get entity @s da
 execute if score $controller.version pk.temp < $pk.it_fi.version pk.value run function pk_it_fi:blocks/items_filter/main/on_update
 
 # Debug logs
-execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{"text": "Items Filter loaded at [","color": "gray"},{"nbt":"temp.items_filter.location.x","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.y","storage":"pk:common"},{"text": ","},{"nbt":"temp.items_filter.location.z","storage":"pk:common"},{"text": "] in "},{"nbt":"temp.items_filter.location.dimension","storage":"pk:common"}]
+execute if score $logs.datapack.it_fi pk.value matches 1 run tellraw @a[tag=pk.dev] [{text: "Items Filter loaded at [",color: "gray"},{nbt:"temp.items_filter.location.x",storage:"pk:common"},{text: ","},{nbt:"temp.items_filter.location.y",storage:"pk:common"},{text: ","},{nbt:"temp.items_filter.location.z",storage:"pk:common"},{text: "] in "},{nbt:"temp.items_filter.location.dimension",storage:"pk:common"}]
