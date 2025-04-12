@@ -13,16 +13,15 @@
       "minecraft:custom_model_data": {
         "strings": ["pk_it_fi:item_filter"]
       },
-      "minecraft:lore": [
-        { "color": "dark_gray", "italic": false, "text": "Items Filter" }
-      ],
+      "minecraft:lore": [{ "color": "dark_gray", "italic": false, "text": "Items Filter" }],
       "minecraft:item_name": { "color": "white", "text": "Items Filter" },
+      "!minecraft:equippable": {},
       "minecraft:custom_data": {
         "pk_data": {
           "custom_block": 1,
           "id": "items_filter",
           "from": "items_filter",
-          "version": 30201
+          "version": 30203
         }
       },
       "minecraft:profile": {
