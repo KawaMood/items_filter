@@ -1,4 +1,4 @@
-#> pk_it_fi:blocks/items_filter/behavior/filter/mode/lax
+#> pk_it_fi:blocks/items_filter/behavior/filter/mode/lax/run
 # @writes
 #   storage pk:common temp.references_sanitized : sanitized reference items
 #   storage pk:common temp.inputs_sanitized : sanitized input items
@@ -13,6 +13,9 @@ data remove storage pk:common temp.references_sanitized[].Slot
 data remove storage pk:common temp.inputs_sanitized[].components
 data remove storage pk:common temp.inputs_sanitized[].count
 data remove storage pk:common temp.inputs_sanitized[].Slot
+
+# Apply optional exception for bundles and shulker boxes
+execute if score $pk.it_fi.settings.mode.lax.ignore_container_color pk.value matches 1 run function pk_it_fi:blocks/items_filter/behavior/filter/mode/lax/ignore_container_color
 
 # Store amount of sanitized references
 execute store result score $references_sanitized.length pk.temp run data get storage pk:common temp.references_sanitized

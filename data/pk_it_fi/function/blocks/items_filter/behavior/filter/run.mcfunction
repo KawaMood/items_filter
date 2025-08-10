@@ -19,4 +19,4 @@ data modify storage pk:common temp.inputs_untreated set from block ~ ~1 ~ Items
 
 # Prepare sanitized data depending on mode
 execute if entity @s[tag=pk.it_fi.mode.strict] run function pk_it_fi:blocks/items_filter/behavior/filter/mode/strict/run
-execute if entity @s[tag=pk.it_fi.mode.lax] run function pk_it_fi:blocks/items_filter/behavior/filter/mode/lax
+execute if entity @s[tag=pk.it_fi.mode.lax] run function pk_it_fi:blocks/items_filter/behavior/filter/mode/lax/run
