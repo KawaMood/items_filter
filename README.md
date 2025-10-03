@@ -6,9 +6,9 @@ No longer need for laggy and bulky redstone contraptions.
 The Items Filter provides a better alternative to automatically sort your storage room!
 
 > [!WARNING]  
-> **This presentation concerns the latest available version of the data pack for Minecraft 1.21.4.**  
-> To find the most recent version, check the [main](https://github.com/KawaMood/waystones) branch.  
-> For other versions, check other [branches](https://github.com/KawaMood/waystones/branches/all).
+> **This presentation concerns the latest available version of the data pack for Minecraft 1.21.5 to 1.21.8.**  
+> To find the most recent version, check the [main](https://github.com/KawaMood/items_filter) branch.  
+> For other versions, check other [branches](https://github.com/KawaMood/items_filter/branches/all).
 
 # 🪄Introduction
 
