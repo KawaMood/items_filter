@@ -1,12 +1,11 @@
 {
   "replace": false,
   "values": [
+    "#minecraft:shulker_boxes",
+    "#pk_it_fi:chest",
     "minecraft:barrel",
-    "minecraft:chest",
     "minecraft:dispenser",
     "minecraft:dropper",
-    "minecraft:hopper",
-    "minecraft:trapped_chest",
-    "#minecraft:shulker_boxes"
+    "minecraft:hopper"
   ]
 }

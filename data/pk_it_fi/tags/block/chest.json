@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": ["minecraft:chest", "minecraft:trapped_chest"]
+  "values": [
+    "#minecraft:copper_chests",
+    "minecraft:chest",
+    "minecraft:trapped_chest"
+  ]
 }
