@@ -1,6 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["CHC", "COC", "CDC"],
+  "pattern": [
+    "CHC",
+    "COC",
+    "CDC"
+  ],
   "key": {
     "D": "minecraft:dropper",
     "H": "minecraft:hopper",
@@ -11,10 +15,21 @@
     "id": "minecraft:player_head",
     "components": {
       "minecraft:custom_model_data": {
-        "strings": ["pk_it_fi:item_filter"]
+        "strings": [
+          "pk_it_fi:item_filter"
+        ]
       },
-      "minecraft:lore": [{ "color": "dark_gray", "italic": false, "text": "Items Filter" }],
-      "minecraft:item_name": { "color": "white", "text": "Items Filter" },
+      "minecraft:lore": [
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "Items Filter"
+        }
+      ],
+      "minecraft:item_name": {
+        "color": "white",
+        "text": "Items Filter"
+      },
       "!minecraft:equippable": {},
       "minecraft:custom_data": {
         "pk_data": {

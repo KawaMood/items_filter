@@ -13,4 +13,4 @@ function pk_it_fi:_main/uninstall/references/specific
 execute unless data storage pk:common installed_datapacks[{}] unless data storage pk.common:data Datapacks[{}] run function pk_it_fi:_main/uninstall/references/common
 
 # Logs
-tellraw @s [{text: "Uninstalled ",color: "yellow"},{text: "KawaMood's Items Filter ",color: "aqua",bold: true},{text: " successfully"},{text: "\nYou can now safely remove this data pack from the folder of your world",color: "yellow"}]
+tellraw @s [{text:"Uninstalled ",color:"yellow"},{text:"KawaMood's Items Filter ",color:"aqua",bold: true},{text:" successfully"},{text:"\nYou can now safely remove this data pack from the folder of your world",color:"yellow"}]
