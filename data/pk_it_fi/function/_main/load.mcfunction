@@ -57,4 +57,4 @@ function pk_it_fi:_main/update/_run
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Logs:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-execute unless score $logs.load pk.value matches ..0 run tellraw @a [{text: "Loaded ",color: "yellow"},{text:"KawaMood's ",color: "aqua", bold: true},{nbt:"installed_datapacks[{id:\"items_filter\"}].name", storage: "pk:common",color: "aqua", bold: true},{text: " (V.",color: "aqua"},{nbt:"installed_datapacks[{id:\"items_filter\"}].version", storage: "pk:common",color: "aqua"},{text: ")",color: "aqua"},{text: " successfully"}]
+execute unless score $logs.load pk.value matches ..0 run tellraw @a [{text: "Loaded ",color: "yellow"},{text:"KawaMood's ",color: "aqua", bold: true},{nbt:"installed_datapacks[{id:\"items_filter\"}].name", storage: "pk:common",interpret:true,color: "aqua", bold: true},{text: " (V.",color: "aqua"},{nbt:"installed_datapacks[{id:\"items_filter\"}].version", storage: "pk:common",interpret:true,color: "aqua"},{text: ")",color: "aqua"},{text: " successfully"}]
