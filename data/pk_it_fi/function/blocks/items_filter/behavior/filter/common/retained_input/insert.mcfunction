@@ -4,7 +4,7 @@
 data modify storage pk:common temp.receiving.before set from block ~ ~-1 ~ Items
 
 # Try to insert
-$loot insert ~ ~-1 ~ loot {pools:[{rolls:1,entries:[{type:"item",name:"$(id)",functions:[{function:"set_components",components:$(components)},{function:"set_count",count:1}]}]}]}
+$loot insert ~ ~-1 ~ loot {pools:[{rolls:1,entries:[{type:"item",name:"$(id)",functions:[{function:"set_components",components:$(components)},{function:"set_count",count:$(count)}]}]}]}
 
 # Check if the insertion failed
 data modify storage pk:common temp.receiving.after set from block ~ ~-1 ~ Items
