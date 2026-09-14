@@ -12,8 +12,20 @@
     "C": "minecraft:cobbled_deepslate"
   },
   "result": {
-    "id": "minecraft:player_head",
+    "id": "minecraft:glow_item_frame",
     "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:glow_item_frame",
+        "Invisible": true,
+        "Tags": [
+          "pk.it_fi",
+          "pk.it_fi.block_placer"
+        ],
+        "data": {
+          "id": "items_filter"
+        }
+      },
+      "minecraft:item_model": "minecraft:player_head",
       "minecraft:custom_model_data": {
         "strings": [
           "pk_it_fi:item_filter"
@@ -36,7 +48,7 @@
           "custom_block": 1,
           "id": "items_filter",
           "from": "items_filter",
-          "version": 30203
+          "version": 30400
         }
       },
       "minecraft:profile": {

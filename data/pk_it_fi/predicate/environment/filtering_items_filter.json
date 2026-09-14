@@ -1,10 +1,10 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:inverted",
+      "type": "minecraft:inverted",
       "term": {
-        "condition": "minecraft:entity_scores",
+        "type": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
           "pk.it_fi.items_filter.transfer_cooldown": {
@@ -14,10 +14,10 @@
       }
     },
     {
-      "condition": "minecraft:any_of",
+      "type": "minecraft:any_of",
       "terms": [
         {
-          "condition": "minecraft:location_check",
+          "type": "minecraft:location_check",
           "offsetY": -1,
           "predicate": {
             "block": {
@@ -26,7 +26,7 @@
           }
         },
         {
-          "condition": "minecraft:location_check",
+          "type": "minecraft:location_check",
           "offsetY": -1,
           "predicate": {
             "block": {
@@ -37,20 +37,20 @@
       ]
     },
     {
-      "condition": "minecraft:any_of",
+      "type": "minecraft:any_of",
       "terms": [
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_scores",
+              "type": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
                 "pk.custom_block.facing": 1
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetX": -1,
               "predicate": {
                 "block": {
@@ -61,17 +61,17 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_scores",
+              "type": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
                 "pk.custom_block.facing": 3
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetX": 1,
               "predicate": {
                 "block": {
@@ -82,17 +82,17 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_scores",
+              "type": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
                 "pk.custom_block.facing": 0
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetZ": 1,
               "predicate": {
                 "block": {
@@ -103,17 +103,17 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_scores",
+              "type": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
                 "pk.custom_block.facing": 2
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "offsetZ": -1,
               "predicate": {
                 "block": {
