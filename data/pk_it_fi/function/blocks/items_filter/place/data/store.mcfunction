@@ -12,11 +12,7 @@ data modify storage pk:common temp.items_filter.location.x set from storage pk:c
 data modify storage pk:common temp.items_filter.location.y set from storage pk:common temp.block.y
 data modify storage pk:common temp.items_filter.location.z set from storage pk:common temp.block.z
 #   Facing
-execute if block ~ ~ ~ player_head run function pk_it_fi:blocks/items_filter/place/data/set_facing/player_head
-execute if block ~ ~ ~ player_wall_head run function pk_it_fi:blocks/items_filter/place/data/set_facing/player_wall_head
-execute if score $temp pk.custom_block.facing matches 1 run data modify storage pk:common temp.items_filter.facing set value "east"
-execute if score $temp pk.custom_block.facing matches 2 run data modify storage pk:common temp.items_filter.facing set value "south"
-execute if score $temp pk.custom_block.facing matches 3 run data modify storage pk:common temp.items_filter.facing set value "west"
+function pk_it_fi:blocks/items_filter/place/data/set_facing
 #   Owner
 data modify storage pk:common temp.items_filter.owner set from entity @s UUID
 

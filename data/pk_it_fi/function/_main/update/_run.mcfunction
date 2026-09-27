@@ -5,5 +5,5 @@
 execute unless score $pk.it_fi.version pk.value matches 30100.. run function pk_it_fi:_main/update/versions/3_1_0
 
 # Set the data pack current version score
-scoreboard players set $pk.it_fi.version pk.value 30400
-data modify storage pk:common installed_datapacks[{id:"items_filter"}].version set value "3.4.0"
+scoreboard players set $pk.it_fi.version pk.value 30401
+data modify storage pk:common installed_datapacks[{id:"items_filter"}].version set value "3.4.1"
